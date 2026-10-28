@@ -1,0 +1,532 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(HELLO KITY.jpg.jpeg);
+    color: #222;
+}
+
+
+/* NAVBAR */
+
+header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar {
+    max-width: 1200px;
+    height: 85px;
+
+    margin: auto;
+    padding: 0 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #fa7294;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.button-nav {
+    background: #fa7294;
+    color: rgb(201, 23, 145);
+
+    text-decoration: none;
+
+    padding: 12px 20px;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+}
+
+
+/* HOME / LATAR BELAKANG */
+
+.hero {
+    min-height: 720px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 120px 8%;
+
+    background-image: url("c:\Users\DHEA APRILIA\OneDrive\Documents\K3 MANAJEMEN PROYEK\HELLO KITY.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.small-text {
+    font-size: 11px;
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 80px;
+    line-height: .95;
+
+    letter-spacing: -4px;
+
+    margin-bottom: 30px;
+}
+
+.description {
+    max-width: 450px;
+
+    color: #080808;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.button-primary,
+.button-secondary {
+    padding: 15px 25px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+}
+
+.button-primary {
+    background: #fa7294;
+    color: rgb(244, 8, 177);
+}
+
+.button-secondary {
+    border: 1px solid #8e8787;
+    color: #141313;
+}
+
+
+/* SECTION */
+
+.section {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 110px 30px;
+}
+
+.section-title {
+    margin-bottom: 55px;
+}
+
+.section-title h2 {
+    font-size: 52px;
+    line-height: 1;
+
+    letter-spacing: -2px;
+}
+
+.center {
+    text-align: center;
+}
+
+
+/* LAYANAN */
+
+.service-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.service-card {
+    background: rgb(255, 174, 208);
+
+    padding: 30px;
+
+    min-height: 250px;
+
+    border-radius: 15px;
+
+    transition: .3s;
+}
+
+.service-card:hover {
+    transform: translateY(-7px);
+}
+
+.service-icon {
+    font-size: 35px;
+
+    margin-bottom: 30px;
+}
+
+.service-card h3 {
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: #ffc3e8;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* HARGA */
+
+.price-section {
+    background: #f4c8c8;
+
+    color: rgb(222, 108, 191);
+
+    padding: 110px 30px;
+}
+
+.price-container {
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.price-card {
+    background: #fdfdfd;
+
+    padding: 35px;
+
+    border-radius: 15px;
+}
+
+.price-card h3 {
+    margin-bottom: 30px;
+}
+
+.price-card h4 {
+    font-size: 32px;
+
+    margin-bottom: 15px;
+}
+
+.price-card h4 span {
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.price-card p {
+    color: #0c0c0c;
+}
+
+.price-card.active {
+    background: #e5e0d4;
+    color: #222;
+}
+
+.price-card.active p {
+    color: #fefbfb;
+}
+
+.popular {
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+
+/* CARA PESAN */
+
+.steps {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 40px;
+}
+
+.number {
+    font-size: 40px;
+
+    font-weight: bold;
+
+    margin-bottom: 25px;
+}
+
+.step h3 {
+    margin-bottom: 12px;
+}
+
+.step p {
+    color: #f6eeee;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* ORDER */
+
+.order-section {
+    padding: 100px 30px;
+}
+
+.order-container {
+    max-width: 1100px;
+
+    margin: auto;
+
+    background: #ffbcd6;
+
+    padding: 60px;
+
+    border-radius: 20px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+}
+
+.order-info h2 {
+    font-size: 55px;
+
+    line-height: .95;
+
+    letter-spacing: -3px;
+
+    margin-bottom: 25px;
+}
+
+.order-info p {
+    color: #2e2d2d;
+
+    line-height: 1.7;
+}
+
+
+/* FORM */
+
+form {
+    display: flex;
+
+    flex-direction: column;
+}
+
+form label {
+    font-size: 13px;
+
+    margin-bottom: 8px;
+}
+
+form input,
+form select,
+form textarea {
+    border: none;
+
+    outline: none;
+
+    padding: 14px;
+
+    margin-bottom: 18px;
+
+    border-radius: 8px;
+
+    font-family: Arial, sans-serif;
+}
+
+form textarea {
+    height: 100px;
+
+    resize: none;
+}
+
+form button {
+    border: none;
+
+    background: #fcfafa;
+
+    color: white;
+
+    padding: 15px;
+
+    border-radius: 30px;
+
+    cursor: pointer;
+}
+
+
+/* TENTANG */
+
+.about-section {
+    background: #222;
+
+    color: white;
+
+    padding: 110px 8%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 100px;
+}
+
+.about-section h2 {
+    font-size: 60px;
+
+    line-height: .95;
+
+    letter-spacing: -3px;
+}
+
+.about-text {
+    max-width: 550px;
+}
+
+.about-text p {
+    color: #faf5f5;
+
+    line-height: 1.8;
+
+    margin-bottom: 25px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #151515;
+
+    color: rgb(247, 140, 192);
+
+    padding: 30px 8%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    font-size: 12px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+
+    nav {
+        display: none;
+    }
+
+    .hero {
+        padding: 120px 25px 80px;
+    }
+
+    .hero h1 {
+        font-size: 55px;
+    }
+
+    .service-container,
+    .price-container,
+    .steps {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .order-container,
+    .about-section {
+        grid-template-columns: 1fr;
+    }
+
+    .order-container {
+        padding: 35px 25px;
+    }
+
+    .about-section {
+        padding: 80px 25px;
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    .service-container,
+    .price-container,
+    .steps {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .section-title h2 {
+        font-size: 40px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+
+        max-width: 200px;
+    }
+
+    footer {
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+}
